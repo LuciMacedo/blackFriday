@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Friday</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var userEmail;
+        function gravar() {
+            userEmail = document.getElementById("email").value;
+            localStorage.email = userEmail;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="logo">
+        <img src="images/logo.svg" alt="logo">
+    </div>
+    <section>
+        <div id="leftside">
+            <article>
+                <header>
+                    <h1 id="title">BLACK FRIDAY</h1>
+                    <h2 id="subtitle">ESTÁ CHEGANDO</h2>
+                </header>
+                <p>Site dedicado a catalogar os grandes descontos da Black Friday. É uma honra poder te
+                    ajudar, nós selecionamos as melhores promoções e descontos para você economizar.</p>
+                <p>Cadastre seu email para ficar por dentro das promoções.</p>
+                <input type="email" id="email">
+                <input id="button" onclick="gravar()" type="button" id="enviar" value="QUERO DESCONTOS">
+            </article>
+        </div>
+        <div id="rightside">
+            <img id="photo" src="images/woman.jpg" alt="mulher com as sacolas de compras">
+        </div>
+    </section>
+</body>
+
+</html>
